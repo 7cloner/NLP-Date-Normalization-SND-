@@ -1,7 +1,10 @@
 from setuptools import setup, find_packages
 
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
-    name='NLP Date Normalization (SND)',
+    name='NLP Date Normalization SND',
     version='0.1.1',
     packages=find_packages(),
     install_requires=[
@@ -11,7 +14,7 @@ setup(
     author_email='foray00227@gmail.com',
     description='This library is part of the NLP project which analyzes the Persian text given to it and extracts all'
                 ' Jalalian and Gregorian dates and converts them into a standard format in Gregorian date.',
-    long_description=open('README.md').read(),
+    long_description=long_description,
     long_description_content_type='text/markdown',
     url='لینک پروژه شما',
     classifiers=[
