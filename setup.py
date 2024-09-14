@@ -4,7 +4,7 @@ with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='NLP Date Normalization SND',
+    name='nlp_date_normalization_snd',
     version='0.1.1',
     packages=find_packages(),
     install_requires=[
@@ -16,7 +16,7 @@ setup(
                 ' Jalalian and Gregorian dates and converts them into a standard format in Gregorian date.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='لینک پروژه شما',
+    url='https://github.com/7cloner/NLP-Date-Normalization-SND-',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
