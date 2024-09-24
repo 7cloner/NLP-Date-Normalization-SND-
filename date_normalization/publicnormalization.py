@@ -40,8 +40,8 @@ class PublicNormalization:
 
     # Extra symbols that should be changed in the text
     _translation_extra_symbols = str.maketrans(
-        'يكيإأؤئة؛،!ئء',
-        'یکیاااوه.,.ی '
+        'يكيإأؤئة؛،ئء',
+        'یکیاااوه.,ی '
     )
 
     # First step, At this stage, we need to normalize the texts that refer to numbers and change Persian and Arabic
@@ -71,7 +71,7 @@ class PublicNormalization:
 
     # third step, in this step, we remove the non-standard signs from the text and optimize the spaces in the text.
     def _clean_text_with_keep_punctuation(self, text: str) -> str:
-        text = re.sub(r'[^\w\s.,؟\-/()]', '', text)
+        text = re.sub(r'[^\w\s.!,؟?\-/()\u200c]', '', text)
         text = re.sub(r'\s+', ' ', text)
         text = text.strip()
 
