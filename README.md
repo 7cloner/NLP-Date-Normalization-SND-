@@ -7,7 +7,7 @@
 برای نصب این کتابخانه کافیه از دستور زیر استفاده کنید: 
 
 ```bash
-pip install nlp-date-normalization-snd==0.1.1
+pip install nlp-date-normalization-snd==0.1.2
 ```
 
 ## نحوه پیاده‌سازی
