@@ -3,3 +3,4 @@ __pycache__
 NLP_Date_Normalization_SND.egg-info
 build
 dist
+setup.py
